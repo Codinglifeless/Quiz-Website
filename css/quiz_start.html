@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website | Coding With Ruba</title>
+    <link rel="stylesheet" href="quiz_start.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <!--Welcome Screen-->
+        <div id="welcome-screen">
+            <h1>CSS QUIZ CHALLENGE</h1>
+            <p class="description">Please answer all questions <strong>15 seconds per questions</strong>. <br>
+            5 questions total.</p>
+            <button class="start-btn" onclick="startQuiz()">START QUIZ</button>
+        </div>
+
+        <!--Quiz Screen-->
+        <div id="quiz-screen" style="display: none;">
+            <h1 id="quiz-title">CSS QUIZ</h1>
+            <div class="timer" id="timer">15</div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="question" id="question">Question</div>
+            <div class="options" id="options">Option</div>
+            <button class="btn" id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!--Score Screen-->
+        <div id="score-section" class="score-section">
+            <h1>Quiz Complete!</h1>
+            <div class="score" id="final-score"></div>
+            <div id="score-message"></div>
+            <button class="btn" onclick="restartQuiz()">Play Again</button>
+            <button class="btn" onclick="homePage()">Home Page</button>
+        </div>
+    </div>
+
+    <script src="quiz_start.js"></script>
+</body>
+
+</html>
